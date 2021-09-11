@@ -173,6 +173,9 @@ func main() {
 	r.GET("/configure", Log(WebHandler(configureHandler, "configure")))
 	r.POST("/configure", Log(WebHandler(configureHandler, "configure")))
 
+	// Custom
+	r.POST("/api/user/delete", Delete)
+
 	// SAML
 	r.GET("/sso", Log(ssoHandler))
 	r.GET("/saml/metadata", Log(samlHandler))
