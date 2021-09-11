@@ -246,6 +246,7 @@ services:
     - SUBSPACE_IPV6_GW=fd00::10:97:1
     - SUBSPACE_IPV6_NAT_ENABLED=1
     - SUBSPACE_DISABLE_DNS=0
+    - SECRET_KEY=xxxx
    cap_add:
     - NET_ADMIN
    network_mode: "host"
